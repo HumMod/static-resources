@@ -1,3 +1,8 @@
+/*
+ * FIXME: Introduce SCSS & Sprockets
+*/
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,7 +52,117 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+#new_contact_form {
+  margin-left: 18px; }
+  #new_contact_form input, #new_contact_form textarea {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 4px;
+    width: 400px; }
+  #new_contact_form label {
+    font-size: 1.3em; }
+  #new_contact_form p {
+    text-indent: 0px !important; }
+  #new_contact_form p.submit input {
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 75px;
+    background-image: -webkit-linear-gradient(top, white, #e5e5e5); }
+  #new_contact_form textarea {
+    height: 150px; }
 
+#error_explanation {
+  border: 2px solid red;
+  color: red;
+  font-size: 1.2em;
+  margin-bottom: 10px; }
+  #error_explanation h2 {
+    background: red;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 4px; }
+  #error_explanation ul {
+    list-style-type: disc;
+    padding: 20px; }
+
+.field_with_errors {
+  color: red;
+  font-weight: bold; }
+  .field_with_errors input, .field_with_errors textarea {
+    border: 1px solid red; }
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left; }
+
+#facebox .popup {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4); }
+
+#facebox .content {
+  display: table;
+  width: 370px;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+#facebox .content > p:first-child {
+  margin-top: 0; }
+
+#facebox .content > p:last-child {
+  margin-bottom: 0; }
+
+#facebox .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 2px;
+  background: #fff; }
+
+#facebox .close img {
+  opacity: 0.3; }
+
+#facebox .close:hover img {
+  opacity: 1.0; }
+
+#facebox .loading {
+  text-align: center; }
+
+#facebox .image {
+  text-align: center; }
+
+#facebox img {
+  border: 0;
+  margin: 0; }
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%; }
+
+.facebox_hide {
+  z-index: -100; }
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99; }
 /* 
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
@@ -215,3 +330,56 @@ body #content nav#block {
 body footer {
   margin-top: 0.85714286em;
   text-align: center; }
+
+/* Home */
+#home {
+  overflow: auto; }
+  #home #main, #home #content {
+    float: left; }
+  #home #content {
+    margin-top: 27px;
+    margin-left: 20px; }
+    #home #content section {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px; }
+      #home #content section h1 {
+        font-size: 5.14285714em; }
+      #home #content section p {
+        font-size: 1.28571429em;
+        line-height: 1.07142857em;
+        padding: 0px 4px; }
+        #home #content section p a {
+          color: #961227;
+          text-decoration: underline; }
+        #home #content section p a:hover {
+          color: #61677a; }
+      #home #content section ul {
+        list-style: disc;
+        margin: 0.5em;
+        padding-left: 1.25em; }
+        #home #content section ul li {
+          margin: 0.5em 0; }
+          #home #content section ul li a {
+            display: block; }
+          #home #content section ul li a:hover {
+            text-decoration: underline; }
+    #home #content section.expanded {
+      background: #f5f5f5;
+      border: 1px solid #e5e5e5;
+      margin-bottom: 10px; }
+    #home #content section#projects p {
+      text-indent: 0px; }
+      #home #content section#projects p .download {
+        font-size: 0.85714286em; }
+      #home #content section#projects p .name {
+        font-size: 0.94285714em;
+        font-weight: bold; }
+    #home #content section#projects p.last {
+      padding-bottom: 10px; }
+
+/* Projects */
+#projects #library h1, #projects #qcp h1 {
+  font-size: 2.14285714em; }
+#projects #library {
+  margin-left: 16px; }
